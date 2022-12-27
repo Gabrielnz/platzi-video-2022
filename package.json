@@ -2,7 +2,9 @@
   "name": "platzi-media-player",
   "version": "1.0.0",
   "description": "Proyecto del curso profesional de JavaScript",
-  "scripts": {},
+  "scripts": {
+    "start": "live-server"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Gabrielnz/platzi-video-2022.git"

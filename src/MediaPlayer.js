@@ -12,13 +12,18 @@ MediaPlayer.prototype._initPlugins = function () {
     });
 }
 
-MediaPlayer.prototype.playOrPause = function () {
-    if (this.isPlaying) {
-        this.isPlaying = !this.isPlaying
-        return this.media.pause()
-    }
-    this.isPlaying = !this.isPlaying
-    return this.media.play()
+MediaPlayer.prototype.play = function () {
+    this.media.play()
+    this.isPlaying = true
+}
+
+MediaPlayer.prototype.pause = function () {
+    this.media.pause()
+    this.isPlaying = false
+}
+
+MediaPlayer.prototype.isItPlaying = function () {
+    return this.isPlaying
 }
 
 MediaPlayer.prototype.mute = function () {

@@ -6,4 +6,6 @@ const button = document.querySelector('button')
 
 const player = new MediaPlayer({ mediaElement: video, plugins: [new AutoPlay()] })
 
-button.onclick = () => player.playOrPause()
+button.onclick = () => {
+    player.isItPlaying() ? player.pause() : player.play()
+}
